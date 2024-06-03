@@ -2,8 +2,6 @@
 
 This repository contains two Spring Boot applications: the BookApp (a book management API) and the Client (a client application that interacts with the BookApp).
 
-### Link to Video: https://www.youtube.com/watch?v=MWQwaqu2qXY
-
 ## Prerequisites
 
 Ensure you have the following installed on your machine:
