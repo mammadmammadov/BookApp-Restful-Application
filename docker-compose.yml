@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  bookapp:
+    image: bookapp
+    build:
+      context: ./BookApp
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  client:
+    image: client
+    build:
+      context: ./Client
+      dockerfile: Dockerfile
+    ports:
+      - "9090:9090"
+    depends_on:
+      - bookapp
+    
